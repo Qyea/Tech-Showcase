@@ -1,10 +1,12 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
+  <PortfolioHeader />
   <HelloWorld msg="Vite + Vue" />
 </template>
+
+<script setup lang="ts">
+import PortfolioHeader from "./components/PortfolioHeader.vue";
+import HelloWorld from "./components/HelloWorld.vue";
+</script>
 
 <style scoped>
 .logo {
