@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper_header">
+    <div class="background-overlay"></div>
     <header class="header">
       <div class="header-items">
         <router-link to="/" class="logo">Programmer</router-link>
@@ -39,6 +40,19 @@ const componentData = {
   justify-content: space-between;
 }
 
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 6, 12, 0.55);
+}
+
+.header {
+  z-index: 1;
+}
+
 .header-items {
   display: flex;
   padding: 0.5rem 1rem;
@@ -61,6 +75,30 @@ const componentData = {
   font-size: var(--cv-font-size-large);
   font-family: Gruppo;
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: var(--cv-mobile-font-size-large);
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  font-size: var(--cv-font-size-large);
+  line-height: var(--cv-line-height);
 
   @media screen and (max-width: 600px) {
     font-size: var(--cv-mobile-font-size-large);

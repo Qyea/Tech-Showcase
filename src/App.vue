@@ -1,9 +1,9 @@
 <template>
-  <PortfolioHeader />
+  <HomeView />
 </template>
 
 <script setup lang="ts">
-import PortfolioHeader from "./components/PortfolioHeader.vue";
+import HomeView from "./components/HomeView.vue";
 </script>
 
 <style scoped>

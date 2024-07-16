@@ -19,7 +19,9 @@
   --cv-translucent-brown: rgb(111, 98, 98, 0.3);
 
   /* font-sizes */
-  --cv-font: Inter;
+  --cv-default-font: Gudea;
+  --cv-decorative-font: Gruppo;
+  --cv-link-font: Inter;
 
   /* font-sizes */
   --cv-font-size-large: 6rem;
@@ -53,7 +55,7 @@ body {
   background-color: var(--cv-bg);
   color: var(--cv-white);
 
-  font-family: Gudea;
+  font-family: var(--cv-default-font);
   font-size: var(--cv-font-size-regular);
 
   @media screen and (max-width: 600px) {
