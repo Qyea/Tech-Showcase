@@ -25,12 +25,15 @@
     </div>
     <div class="block-wrapper">
       <h2 class="title">{{ blockData.title }}</h2>
-      <TextBlock image="./src/assets/images/profile-photo.jpg">
+      <TextBlock :left="true">
         <template #text>
           I am a student of the Belarusian State University, Faculty of Applied
           Mathematics and Computer Science. In three years of study, I gained
           basic knowledge of both low-level languages, such as assembler, and
           high-level programming languages: C++, Java.
+        </template>
+        <template #left>
+          <CircleImage :image="'./src/assets/images/profile-photo.jpg'" />
         </template>
       </TextBlock>
       <TextBlock :table="true">
@@ -59,6 +62,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import TextBlock from "./TextBlock.vue";
+import CircleImage from "./CircleImage.vue";
 //defineProps<{ msg: string }>();
 
 const blockData = {
