@@ -72,8 +72,6 @@ const blockData = {
           basic knowledge of both low-level languages, such as assembler, and
           high-level programming languages: C++, Java.`,
 };
-
-const count = ref(0);
 </script>
 
 <style scoped>

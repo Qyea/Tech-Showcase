@@ -8,6 +8,13 @@
         </Clipboard>
 
         <a v-else class="link" :href="item.src" target="_blank">
+          <img
+            v-if="item.image"
+            style="margin: 10px"
+            :src="item.image"
+            :alt="item.title"
+            height="50"
+          />
           <i v-if="item.icon" :class="showIcon(item.icon ? item.icon : '')"></i>
           {{ item.title }}</a
         >
@@ -24,6 +31,8 @@ export interface linkData {
   src?: string;
   icon?: string;
   type?: string;
+  image?: string;
+  alt?: string;
 }
 
 const props = defineProps<{

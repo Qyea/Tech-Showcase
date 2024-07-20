@@ -14,6 +14,17 @@
           high-level programming languages: C++, Java.
         </p>
       </div>
+      <div class="block">
+        <h3 class="block-title">Languages</h3>
+        <SkillCard skill="Russia" level="Native" size="small" />
+        <SkillCard skill="English" level="B2" size="small" />
+      </div>
+      <div class="block">
+        <h3 class="block-title">Projects</h3>
+        <a href="https://github.com/Qyea/Tech-Showcase" class="link"
+          ><p>This Portfolio</p></a
+        >
+      </div>
     </div>
     <div class="main-block">
       <div class="card-header">
@@ -58,8 +69,12 @@
           </p>
         </div>
         <div class="card">
+          <h3 class="block-title">Skill Set</h3>
+          <Navigation :data="skillsSet" />
+        </div>
+        <div class="card">
           <h3 class="block-title">Contacts</h3>
-          <Navigation :data="CardLinks" />
+          <Navigation :data="cardLinks" />
         </div>
       </div>
     </div>
@@ -69,8 +84,9 @@
 <script setup lang="ts">
 import Navigation from "./Navigation.vue";
 import CircleImage from "./CircleImage.vue";
+import SkillCard from "./SkillCard.vue";
 
-const CardLinks = [
+const cardLinks = [
   {
     type: "clipboard",
     title: "kreshess@mail.ru",
@@ -89,6 +105,76 @@ const CardLinks = [
     icon: "instagram",
   },
 ];
+
+const skillsSet = [
+  {
+    src: "https://reactjs.org/",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
+    title: "React",
+  },
+  {
+    src: "https://vuejs.org/",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/vuejs-original-wordmark.svg",
+    title: "Vue",
+  },
+  {
+    src: "https://www.javascript.com/",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/javascript-original.svg",
+    title: "JavaScript",
+  },
+  {
+    src: "https://www.typescriptlang.org/",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/typescript-original.svg",
+    title: "TypeScript",
+  },
+  {
+    src: "https://en.wikipedia.org/wiki/HTML5",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg",
+    title: "HTML5",
+  },
+  {
+    src: "https://www.w3schools.com/css/",
+    image:
+      "https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg",
+    title: "CSS3",
+  },
+  {
+    src: "https://sass-lang.com/",
+    image: "https://profilinator.rishav.dev/skills-assets/sass-original.svg",
+    title: "Sass",
+  },
+  {
+    src: "https://webpack.js.org/",
+    image: "https://profilinator.rishav.dev/skills-assets/webpack-original.svg",
+    title: "Webpack",
+  },
+  {
+    src: "https://www.tailwindcss.com/",
+    image: "https://profilinator.rishav.dev/skills-assets/tailwindcss.svg",
+    title: "Tailwind CSS",
+  },
+  {
+    src: "https://mui.com/",
+    image: "https://profilinator.rishav.dev/skills-assets/mui.png",
+    title: "Material UI",
+  },
+
+  {
+    src: "https://getbootstrap.com/docs/3.4/javascript/",
+    image: "https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg",
+    title: "Bootstrap",
+  },
+  {
+    src: "https://www.figma.com/",
+    image: "https://profilinator.rishav.dev/skills-assets/figma-icon.svg",
+    title: "Figma",
+  },
+];
 </script>
 
 <style lang="scss" scoped>
@@ -97,14 +183,14 @@ const CardLinks = [
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #5f8e66;
+  gap: 1rem;
+  background-color: var(--cv-primary);
 }
 
 .card-info {
-  padding: 1.25rem 0.85rem;
+  padding: 1rem 0.85rem;
   padding-right: 4rem;
-  background-color: #495e63;
+  background-color: var(--cv-secondary-bg);
 }
 
 .card-header {
