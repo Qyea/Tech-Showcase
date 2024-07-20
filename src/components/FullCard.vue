@@ -185,6 +185,7 @@ const skillsSet = [
   flex-direction: column;
   gap: 1rem;
   background-color: var(--cv-primary);
+  flex: 1;
 }
 
 .card-info {
@@ -201,7 +202,7 @@ const skillsSet = [
 }
 
 .main-block {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .education-list {
