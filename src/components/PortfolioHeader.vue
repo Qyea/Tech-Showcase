@@ -4,7 +4,7 @@
     <header class="header">
       <div class="header-items">
         <router-link to="/" class="logo">Programmer</router-link>
-        <Navigation />
+        <Navigation :data="tempData" />
       </div>
     </header>
     <section class="hero">
@@ -23,6 +23,37 @@ const componentData = {
   name: "Anastasia Krech",
   greetings: "Allow me to introduce myself",
 };
+
+const tempData = [
+  {
+    src: "Profile",
+    title: "Profile",
+  },
+  {
+    src: "Skills",
+    title: "Skills",
+  },
+  {
+    src: "Education",
+    title: "Education",
+  },
+  {
+    src: "Languages",
+    title: "Languages",
+  },
+  {
+    src: "Projects",
+    title: "Projects",
+  },
+  {
+    src: "Hobbies",
+    title: "Hobbies",
+  },
+  {
+    src: "Contacts",
+    title: "Contacts",
+  },
+];
 </script>
 
 <style lang="scss" scoped>

@@ -9,16 +9,17 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+
 enum Layouts {
-  Default = "default",
-  Small = "small",
-  Medium = "medium",
-  Large = "large",
+  default = "default",
+  small = "small",
+  medium = "medium",
+  large = "large",
 }
 
 const props = defineProps<{
   image: string;
-  size?: Layouts;
+  size?: keyof typeof Layouts;
 }>();
 
 const pathSections = props.image.split("/");
@@ -43,7 +44,7 @@ const sizeStyles = {
   },
 };
 
-const componentStyle = ref(sizeStyles[props.size || Layouts.Default]);
+const componentStyle = ref(sizeStyles[props.size || Layouts.default]);
 </script>
 
 <style lang="scss" scoped>
