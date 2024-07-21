@@ -1,7 +1,7 @@
 <template>
   <div class="info-block">
-    <div v-if="props.table" class="languages">
-      <slot name="table"></slot>
+    <div v-if="!props.left">
+      <slot name="right"></slot>
     </div>
     <div class="block-text"><slot name="text"> </slot></div>
     <div v-if="props.left">
@@ -13,7 +13,6 @@
 <script lang="ts" setup>
 const props = defineProps<{
   left?: boolean;
-  table?: boolean;
 }>();
 </script>
 
@@ -32,24 +31,5 @@ const props = defineProps<{
   word-wrap: break-word;
   text-align: justify;
   line-height: 120%;
-}
-
-.languages {
-  width: 20%;
-  padding: 1.5rem 1.25rem 0;
-
-  display: flex;
-  flex-direction: column;
-
-  font-size: var(--cv-font-size-ms);
-  font-style: italic;
-  text-align: center;
-
-  border: 0.2rem solid var(--cv-translucent-white);
-
-  @media screen and (max-width: 600px) {
-    padding: 0;
-    font-size: var(--cv-mobile-font-size-ms);
-  }
 }
 </style>

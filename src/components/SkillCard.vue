@@ -24,15 +24,19 @@ const props = defineProps<{
 const sizeStyles = {
   default: {
     padding: "var(--cv-padding) var(--cv-padding-large)",
+    fontSize: "var(--cv-font-size-regular)",
   },
   small: {
     padding: "var(--cv-padding-small) var(--cv-padding-medium)",
+    fontSize: "var(--cv-font-size-small)",
   },
   medium: {
     padding: "var(--cv-padding-medium) var(--cv-padding)",
+    fontSize: "var(--cv-font-size-medium)",
   },
   large: {
     padding: "var( --cv-padding-large) var(--cv-padding-extra-large)",
+    fontSize: "var(--cv-font-size-large)",
   },
 };
 

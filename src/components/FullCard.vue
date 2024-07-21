@@ -65,7 +65,7 @@
             development of a learning platform using the Vue framework with
             TypeScript. In six months of working on this real project, I have
             gained not only valuable development experience, but also learned
-            how to work in a team
+            how to work in a team.
           </p>
         </div>
         <div class="card">
