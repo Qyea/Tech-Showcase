@@ -28,7 +28,7 @@
     </div>
     <div class="main-block">
       <div class="card-header">
-        <h1>Anastasia Krech</h1>
+        <h1 class="info-title">Anastasia Krech</h1>
       </div>
       <div class="card-info">
         <div class="card">

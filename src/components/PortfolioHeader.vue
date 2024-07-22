@@ -30,10 +30,6 @@ const tempData = [
     title: "Profile",
   },
   {
-    src: "Skills",
-    title: "Skills",
-  },
-  {
     src: "Education",
     title: "Education",
   },

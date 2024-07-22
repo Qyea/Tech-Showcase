@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
   margin: 0;
-  font-size: var(--cv-font-size-large);
+  font-size: var(--cv-font-size-extra-large);
 
   @media screen and (max-width: 600px) {
     font-size: var(--cv-mobile-font-size-large);
@@ -165,4 +165,8 @@ p {
   .block-title {
     border-bottom: 1px solid var(--cv-white);
   }
+}
+
+.info-title {
+  font-size: var(--cv-font-size-large);
 }

@@ -16,8 +16,8 @@
             height="50"
           />
           <i v-if="item.icon" :class="showIcon(item.icon ? item.icon : '')"></i>
-          {{ item.title }}</a
-        >
+          {{ item.title }}
+        </a>
       </li>
     </ul>
   </nav>
