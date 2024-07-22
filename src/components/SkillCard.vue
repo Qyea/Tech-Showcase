@@ -1,7 +1,7 @@
 <template>
   <div class="card" :style="componentStyle">
     <div>{{ props.skill }}</div>
-    <div class="level">{{ props.level }}</div>
+    <div :style="{ color: activeColor }">{{ props.level }}</div>
   </div>
 </template>
 
@@ -19,7 +19,10 @@ const props = defineProps<{
   skill: string;
   level: string;
   size?: keyof typeof Layouts;
+  color?: string;
 }>();
+
+const activeColor = ref(props.color ? props.color : "#495e63");
 
 const sizeStyles = {
   default: {
@@ -35,7 +38,7 @@ const sizeStyles = {
     fontSize: "var(--cv-font-size-medium)",
   },
   large: {
-    padding: "var( --cv-padding-large) var(--cv-padding-extra-large)",
+    padding: "var( --cv-padding-medium) var(--cv-padding-large)",
     fontSize: "var(--cv-font-size-large)",
   },
 };
@@ -48,7 +51,7 @@ const componentStyle = ref(sizeStyles[props.size || Layouts.default]);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 3rem;
 
   border: 1px solid var(--cv-white);
   border-radius: 0.625rem;
