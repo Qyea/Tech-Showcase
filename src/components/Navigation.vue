@@ -7,7 +7,12 @@
           {{ item.title }}
         </Clipboard>
 
-        <a v-else class="link" :href="item.src" target="_blank">
+        <a
+          v-else
+          class="link"
+          :href="item.src?.toLocaleLowerCase()"
+          target="_blank"
+        >
           <img
             v-if="item.image"
             style="margin: 10px"

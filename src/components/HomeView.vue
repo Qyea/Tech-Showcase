@@ -1,15 +1,90 @@
 <template>
   <PortfolioHeader />
-  <SectionBlock title="Profile">
+  <SectionBlock id="profile" title="Profile">
     <BlockLayout :block-data="profileData" />
   </SectionBlock>
-  <SectionBlock title="languages">
+  <SectionBlock id="languages" title="Languages">
     <div class="skills-wrapper">
-      <SkillCard skill="Russia" level="Native" size="large" color="#5f8e66" />
-      <SkillCard skill="English" level="B2" size="large" color="#5f8e66" />
+      <div class="bg">
+        <div class="brown line small"></div>
+        <div class="green line"></div>
+        <div class="green line large"></div>
+        <div class="brown line"></div>
+        <div class="green line"></div>
+      </div>
+      <SkillCard
+        class="front"
+        skill="Russia"
+        level="Native"
+        size="large"
+        color="#5f8e66"
+      />
+      <SkillCard
+        class="front"
+        skill="English"
+        level="B2"
+        size="large"
+        color="#5f8e66"
+      />
     </div>
   </SectionBlock>
-  <SectionBlock title="Hobbies">
+  <SectionBlock id="education" title="Education">
+    <div class="education-list">
+      <div class="item">
+        <div class="list-item section">
+          <div>
+            <h3>Secondary education:</h3>
+            <h4>Gymnasium No. 13</h4>
+          </div>
+          <h3>2010 - 2021</h3>
+        </div>
+        <p class="story">
+          I decided to mark this place of study because it was where I first had
+          thoughts about programming. I was part of a game development interest
+          group and served as the lead designer (creating concepts for
+          characters, maps, and scripting cutscenes)
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="list-item section">
+          <div>
+            <h3>Higher education:</h3>
+            <h4>Belarusian State University</h4>
+          </div>
+          <h3>2021 - 2025</h3>
+        </div>
+        <p class="story">
+          Studying at the university provided me with a solid foundation in
+          programming and expanded my horizons in various fields of this
+          discipline. The teachers gave us the opportunity to immerse ourselves
+          in various areas of programming, from the development of algorithms
+          for numerical methods to working with neural networks and computer
+          vision. This provided me with valuable experience and allowed me to
+          learn several programming languages during my studies.
+        </p>
+      </div>
+      <div class="item">
+        <div class="list-item section">
+          <div>
+            <h3>Educational course:</h3>
+            <h4>EPIC institute of technology</h4>
+          </div>
+          <h3>2023 - 2024</h3>
+        </div>
+        <p class="story">
+          Studying at the EPIC Institute of Technology provides a unique and
+          valuable opportunity for students to develop their skills and receive
+          a quality education in the field of technology. We have worked with
+          experienced and qualified teachers who have extensive experience in
+          their fields. Thus, I actively interacted with real projects and
+          problems, which helped me develop my skills and better understand how
+          to apply the knowledge I gained in practice.
+        </p>
+      </div>
+    </div>
+  </SectionBlock>
+  <SectionBlock id="hobbies" title="Hobbies">
     <BlockLayout :block-data="hobbiesData" />
   </SectionBlock>
   <FullCard />
@@ -59,7 +134,59 @@ const hobbiesData = [
 
 <style lang="scss" scoped>
 .skills-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 10rem;
+}
+
+.story {
+  font-size: 1.75rem;
+}
+
+.front {
+  z-index: 1;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 5rem;
+}
+
+.line {
+  width: 708px;
+  height: 82px;
+  transform: rotate(38deg);
+}
+
+.green {
+  background-color: #192222;
+}
+
+.brown {
+  background-color: #2f2525;
+}
+
+.small {
+  width: 572px;
+  height: 28px;
+}
+
+.large {
+  width: 908px;
+  height: 208px;
+}
+
+.section {
+  border-bottom: 1px solid var(--cv-white);
+}
+
+.item {
+  margin-bottom: 2rem;
 }
 </style>

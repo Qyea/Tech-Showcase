@@ -205,17 +205,6 @@ const skillsSet = [
   flex: 1;
 }
 
-.education-list {
-  padding: 1rem 0;
-}
-
-.list-item {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
 .text {
   padding: 1rem 0;
 }

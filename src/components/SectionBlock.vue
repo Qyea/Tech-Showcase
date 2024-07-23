@@ -57,6 +57,8 @@ const props = defineProps<{ title: string }>();
   line-height: var(--cv-line-height);
   text-transform: uppercase;
 
+  z-index: 1;
+
   @media screen and (max-width: 600px) {
     font-size: var(--cv-mobile-font-size-large);
   }
@@ -87,5 +89,9 @@ const props = defineProps<{ title: string }>();
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  z-index: 1;
 }
 </style>
