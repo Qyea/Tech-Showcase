@@ -10,8 +10,12 @@
         <a
           v-else
           class="link"
-          :href="item.src?.toLocaleLowerCase()"
-          target="_blank"
+          :href="
+            !item.image && !item.icon
+              ? `#${item.src?.toLocaleLowerCase()}`
+              : item.src?.toLocaleLowerCase()
+          "
+          :target="!item.image && !item.icon ? '' : '_blank'"
         >
           <img
             v-if="item.image"

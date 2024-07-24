@@ -3,6 +3,22 @@
   <SectionBlock id="profile" title="Profile">
     <BlockLayout :block-data="profileData" />
   </SectionBlock>
+  <SectionBlock id="education" title="Education">
+    <div class="education-list">
+      <div v-for="item in educationData" class="item">
+        <div class="list-item section">
+          <div>
+            <h3>{{ item.step }}</h3>
+            <h4>{{ item.place }}</h4>
+          </div>
+          <h3>{{ item.years }}</h3>
+        </div>
+        <p class="story">
+          {{ item.description }}
+        </p>
+      </div>
+    </div>
+  </SectionBlock>
   <SectionBlock id="languages" title="Languages">
     <div class="skills-wrapper">
       <div class="bg">
@@ -28,32 +44,20 @@
       />
     </div>
   </SectionBlock>
-  <SectionBlock id="education" title="Education">
-    <div class="education-list">
-      <div v-for="item in educationData" class="item">
-        <div class="list-item section">
-          <div>
-            <h3>{{ item.step }}</h3>
-            <h4>{{ item.place }}</h4>
-          </div>
-          <h3>{{ item.years }}</h3>
-        </div>
-        <p class="story">
-          {{ item.description }}
-        </p>
-      </div>
-    </div>
+  <SectionBlock id="projects" title="Projects">
+    <ProjectCard class="front" />
   </SectionBlock>
   <SectionBlock id="hobbies" title="Hobbies">
     <BlockLayout :block-data="hobbiesData" />
   </SectionBlock>
-  <FullCard />
+  <FullCard id="contacts" />
 </template>
 
 <script lang="ts" setup>
 import PortfolioHeader from "./PortfolioHeader.vue";
 import SectionBlock from "./SectionBlock.vue";
 import SkillCard from "./SkillCard.vue";
+import ProjectCard from "./ProjectCard.vue";
 import FullCard from "./FullCard.vue";
 import BlockLayout from "./BlockLayout.vue";
 
