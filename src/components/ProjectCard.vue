@@ -1,71 +1,37 @@
 <template>
   <div class="top-cards">
-    <article class="top-card">
-      <div class="top-card-pic">
-        <img
-          class="top-card-thumb"
-          src="./../assets/images/social.svg"
-          alt="Ozi-logo"
-          width="400"
-        />
-        <div class="top-card-stats">
-          <h3 class="top-card-title">Ozi: Social media</h3>
-        </div>
-      </div>
-      <p class="top-card-desc">
-        This project was my first attempt at a full stack. Its development took
-        about 4 months. You can also add friends, write messages, post your
-        posts and leave your status in it.
-      </p>
-      <a class="top-card-more" href="./pages/project_1.html" target="_blank"
-        >READ MORE</a
-      >
-    </article>
-
-    <article class="top-card">
-      <div class="top-card-pic">
-        <img
-          class="top-card-thumb"
-          src="./../assets/images/eye.svg"
-          alt="Computer-vision"
-          width="400"
-        />
-        <div class="top-card-stats">
-          <h3 class="top-card-title">Computer Vision</h3>
-        </div>
-      </div>
-      <p class="top-card-desc">
-        So that all the work is not wasted, here I will leave the tasks and
-        their solutions for computer vision.
-      </p>
-      <a class="top-card-more" href="./pages/project_2.html" target="_blank"
-        >READ MORE</a
-      >
-    </article>
-
-    <article class="top-card">
+    <article v-for="project in props.projectData" class="top-card">
       <div class="top-card-pic">
         <img
           class="top__card-thumb"
-          src="./../assets/images/toolbox.svg"
+          :src="`./src/assets/images/${project.image}.svg`"
           alt="Travel-page"
           width="400"
         />
         <div class="top-card-stats">
-          <h3 class="top-card-title">Travel Page</h3>
+          <h3 class="top-card-title">{{ project.title }}</h3>
         </div>
       </div>
-      <p class="top-card-desc">
-        My path in the frontend began with this layout based on a YouTube video.
-        Although looking at its code, I understand how clumsily it is made, but
-        I am grateful for this experience.
-      </p>
-      <a class="top-card-more" href="./pages/project_3.html" target="_blank"
-        >READ MORE</a
-      >
+      <p class="top-card-desc">{{ project.description }}</p>
+      <a class="top-card-more" :href="project.url" target="_blank">
+        READ MORE
+      </a>
     </article>
   </div>
 </template>
+
+<script lang="ts" setup>
+export interface Project {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+}
+
+const props = defineProps<{
+  projectData: Project[];
+}>();
+</script>
 
 <style lang="scss" scoped>
 .projects-wrapper {
@@ -153,20 +119,6 @@
 
 .top-card-title {
   margin: 0 auto 0 0;
-}
-
-.top-card-likes {
-  font-size: var(--cv-font-size-small);
-  padding-left: 24px;
-  background: url(./assets/icons/like-icon.svg) no-repeat left;
-  background-size: var(--cv-font-size-small);
-}
-
-.top-card-comments {
-  font-size: var(--cv-font-size-small);
-  padding-left: 24px;
-  background: url(./assets/icons/comment-icon.svg) no-repeat left;
-  background-size: var(--cv-font-size-small);
 }
 
 .top-card-desc {

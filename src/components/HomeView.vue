@@ -45,7 +45,7 @@
     </div>
   </SectionBlock>
   <SectionBlock id="projects" title="Projects">
-    <ProjectCard class="front" />
+    <ProjectCard :project-data="projectData" class="front" />
   </SectionBlock>
   <SectionBlock id="hobbies" title="Hobbies">
     <BlockLayout :block-data="hobbiesData" />
@@ -116,6 +116,30 @@ const educationData = [
     years: "2023-2024",
     description:
       "Studying at the EPIC Institute of Technology provides a unique and valuable opportunity for students to develop their skills and receive a quality education in the field of technology. We have worked with experienced and qualified teachers who have extensive experience in their fields. Thus, I actively interacted with real projects and problems, which helped me develop my skills and better understand how to apply the knowledge I gained in practice.",
+  },
+];
+
+const projectData = [
+  {
+    title: "Ozi: Social media",
+    description:
+      "This project was my first attempt at a full stack. Its development took about 4 months. You can also add friends, write messages, post your posts and leave your status in it.",
+    image: "social",
+    url: "https://github.com/Qyea/Ozi",
+  },
+  {
+    title: "Computer Vision",
+    description:
+      " So that all the work is not wasted, here I will leave the tasks and their solutions for computer vision.",
+    image: "eye",
+    url: "https://github.com/Qyea/Computer-vision",
+  },
+  {
+    title: "Ozi: Social media",
+    description:
+      " This project was my first attempt at a full stack. Its development took about 4 months. You can also add friends, write messages, post your posts and leave your status in it.",
+    image: "toolbox",
+    url: "https://github.com/Qyea/Travel-Landing-Page",
   },
 ];
 </script>
