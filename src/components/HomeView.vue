@@ -67,7 +67,7 @@ const profileData = [
     text: "I am a student of the Belarusian State University, Faculty of Applied Mathematics and Computer Science. In three years of study, I gained basic knowledge of both low-level languages, such as assembler, and high-level programming languages: C++, Java.",
     type: "image",
     side: "left",
-    url: "./src/assets/images/profile-photo.jpg",
+    url: "./assets/images/profile-photo.jpg",
   },
   {
     title: "ProfileTable",
@@ -84,14 +84,14 @@ const hobbiesData = [
     text: "Apart from standard hobbies such as drawing, sports, reading and computer games, one of my most favorite hobbies is learning. I always strive to learn something new and expand my knowledge and skills.At the university, we were not given the opportunity to try the frontend. Therefore, the first steps in this area were taken independently.",
     type: "image",
     side: "left",
-    url: "./src/assets/images/drawings.png",
+    url: "./assets/images/drawings.png",
   },
   {
     title: "Hobbies1",
     text: "React has become a great platform for me to explore the frontend. He gave me the opportunity to immerse myself in the world of the component approach and learn how to effectively interact with the data and the state of the application. I am passionate about creating interactive and beautiful user interfaces. I wonder how various tools and technologies can be used to create modern web applications.",
     type: "image",
     side: "right",
-    url: "./src/assets/images/react.png",
+    url: "./assets/images/react.png",
   },
 ];
 

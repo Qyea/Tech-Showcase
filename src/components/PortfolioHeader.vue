@@ -58,7 +58,7 @@ const tempData = [
   padding: 0.75rem 2.5rem;
   border-bottom: var(--cv-white) solid 1px;
 
-  background: url(./../assets/images/beautiful.gif);
+  background: url(./assets/images/beautiful.gif);
   background-size: cover;
   min-height: 100vh;
 

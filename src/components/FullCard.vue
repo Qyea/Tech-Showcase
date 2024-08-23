@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="side-block">
-      <CircleImage
-        :image="'./src/assets/images/profile-photo.jpg'"
-        size="medium"
-      />
+      <CircleImage :image="'./assets/images/profile-photo.jpg'" size="medium" />
       <div class="block">
         <h3 class="block-title">Profile</h3>
         <p>

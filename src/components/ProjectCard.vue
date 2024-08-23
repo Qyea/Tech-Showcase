@@ -4,7 +4,7 @@
       <div class="top-card-pic">
         <img
           class="top__card-thumb"
-          :src="`./src/assets/images/${project.image}.svg`"
+          :src="`./assets/images/${project.image}.svg`"
           alt="Travel-page"
           width="400"
         />
