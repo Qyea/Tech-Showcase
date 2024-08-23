@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="side-block">
       <CircleImage
-        :image="'./src/assets/images/profile-photo.jpg'"
+        :image="'./../assets/images/profile-photo.jpg'"
         size="medium"
       />
       <div class="block">
