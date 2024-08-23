@@ -1,5 +1,51 @@
-# Vue 3 + TypeScript + Vite
+# Portfolio Project
+Welcome to my Vue.js portfolio! I am a passionate frontend developer with expertise in Vue.js framework.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Setup
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+1.  Make sure you have Node JS installed. If you don't have it:
+
+-   [Download it from nodejs.org](https://nodejs.org/)
+-   [Install it using NVM](https://github.com/nvm-sh/nvm)
+-   If you're on Mac, Homebrew is a good option too:
+
+```
+brew install node
+
+```
+
+2.  Clone the repo:
+
+```
+git clone https://github.com/Qyea/Tech-Showcase.git
+
+```
+
+3.  Open the project folder:
+
+```
+cd portfolio
+
+```
+
+4.  Install packages and dependencies:
+
+```
+npm install
+
+```
+
+5.  Start a local dev server at  `http://localhost:5173` :
+
+```
+npm run dev
+
+```
+
+## Features
+
+[](https://github.com/Qyea/Tech-Showcase?tab=readme-ov-file#features)
+
+-   [Vue.js v3](https://vuejs.org/)  with  [Vue Router](https://router.vuejs.org/)
+-   Composition API
+-   Reusable Components
