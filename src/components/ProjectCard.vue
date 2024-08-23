@@ -6,7 +6,6 @@
           class="top__card-thumb"
           :src="`./assets/images/${project.image}.svg`"
           alt="Travel-page"
-          width="400"
         />
         <div class="top-card-stats">
           <h3 class="top-card-title">{{ project.title }}</h3>
@@ -34,6 +33,16 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
+img {
+  min-width: 35vh;
+  @media screen and (max-width: 1200px) {
+    min-width: 20vh;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
 .projects-wrapper {
   display: flex;
   gap: 1.25rem;
@@ -115,6 +124,10 @@ const props = defineProps<{
   width: 100%;
   background: var(--cv-translucent-black);
   padding: 1rem;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .top-card-title {
