@@ -21,7 +21,7 @@ import Navigation from "./Navigation.vue";
 
 const componentData = {
   name: "Anastasia Krech",
-  greetings: "Allow me to introduce myself",
+  greetings: "Let me introduce myself",
 };
 
 const tempData = [

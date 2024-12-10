@@ -51,7 +51,7 @@ const componentStyle = ref(sizeStyles[props.size || Layouts.default]);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 1rem;
 
   border: 1px solid var(--cv-white);
   border-radius: 0.625rem;

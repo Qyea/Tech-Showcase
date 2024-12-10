@@ -5,21 +5,23 @@
       <div class="block">
         <h3 class="block-title">Profile</h3>
         <p>
-          I am a student of the Belarusian State University, Faculty of Applied
-          Mathematics and Computer Science. In two years of study, I gained
-          basic knowledge of both low-level languages, such as assembler, and
-          high-level programming languages: C++, Java.
+          Student at Belarusian State University, Faculty of Applied Mathematics
+          and Computer Science, with foundational knowledge in low-level
+          languages (Assembly) and high-level languages (C++, Java).
         </p>
       </div>
       <div class="block">
         <h3 class="block-title">Languages</h3>
-        <SkillCard skill="Russia" level="Native" size="small" />
+        <SkillCard skill="Russian" level="Native" size="small" />
         <SkillCard skill="English" level="B2" size="small" />
       </div>
       <div class="block">
         <h3 class="block-title">Projects</h3>
+        <a href="https://epic-edu.institute" class="link"
+          ><p>Educational platform</p></a
+        >
         <a href="https://github.com/Qyea/Tech-Showcase" class="link"
-          ><p>This Portfolio</p></a
+          ><p>Portfolio</p></a
         >
       </div>
     </div>
@@ -57,18 +59,20 @@
         <div class="card">
           <h3 class="block-title">Experience</h3>
           <p class="text">
-            During my EPIC studies, I was interviewed and got the opportunity to
-            do an internship. As part of this internship, I participated in the
-            development of a learning platform using the Vue framework with
-            TypeScript. In six months of working on this real project, I have
-            gained not only valuable development experience, but also learned
-            how to work in a team.
+            During my studies at EPIC, I was selected for an internship
+            opportunity through an interview process. As part of this
+            internship, I contributed to the development of an educational
+            platform using the Vue framework and TypeScript. Over one year of
+            working on this real-world project, I not only gained valuable
+            development experience but also honed my teamwork and collaboration
+            skills.
           </p>
         </div>
         <div class="card">
           <h3 class="block-title">Skill Set</h3>
           <Navigation :data="skillsSet" />
         </div>
+
         <div class="card">
           <h3 class="block-title">Contacts</h3>
           <Navigation :data="cardLinks" />
@@ -177,7 +181,7 @@ const skillsSet = [
 <style lang="scss" scoped>
 .side-block {
   max-width: 25%;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -186,6 +190,8 @@ const skillsSet = [
 }
 
 .card-info {
+  flex-grow: 1;
+
   padding: 1rem 0.85rem;
   padding-right: 4rem;
   background-color: var(--cv-secondary-bg);
@@ -199,6 +205,8 @@ const skillsSet = [
 }
 
 .main-block {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 

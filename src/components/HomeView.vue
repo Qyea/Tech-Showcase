@@ -30,7 +30,7 @@
       </div>
       <SkillCard
         class="front"
-        skill="Russia"
+        skill="Russian"
         level="Native"
         size="large"
         color="#5f8e66"
@@ -81,14 +81,14 @@ const profileData = [
 const hobbiesData = [
   {
     title: "Hobbies",
-    text: "Apart from standard hobbies such as drawing, sports, reading and computer games, one of my most favorite hobbies is learning. I always strive to learn something new and expand my knowledge and skills.At the university, we were not given the opportunity to try the frontend. Therefore, the first steps in this area were taken independently.",
+    text: "In addition to standard hobbies such as drawing, sports, reading, and computer games, one of my greatest passions is learning. I am constantly striving to acquire new knowledge and enhance my skills. Since frontend development was not covered in my university curriculum, I took the initiative to explore it independently, making my first steps in this field on my own.",
     type: "image",
     side: "left",
     url: "./assets/images/drawings.png",
   },
   {
     title: "Hobbies1",
-    text: "React has become a great platform for me to explore the frontend. He gave me the opportunity to immerse myself in the world of the component approach and learn how to effectively interact with the data and the state of the application. I am passionate about creating interactive and beautiful user interfaces. I wonder how various tools and technologies can be used to create modern web applications.",
+    text: "React has been an excellent platform for deepening my understanding of frontend development. It introduced me to the component-based approach and taught me how to effectively manage application data and state. I am passionate about building interactive and visually appealing user interfaces and continuously explore how various tools and technologies can be leveraged to create modern web applications.",
     type: "image",
     side: "right",
     url: "./assets/images/react.png",
@@ -101,7 +101,7 @@ const educationData = [
     place: "Gymnasium No. 13",
     years: "2010-2021",
     description:
-      "I decided to mark this place of study because it was where I first had thoughts about programming. I was part of a game development interest group and served as the lead designer (creating concepts for characters, maps, and scripting cutscenes)",
+      "I highlight this institution because it sparked my initial interest in programming. As part of a game development interest group, I took on the role of lead designer, creating concepts for characters, maps, and scripting cutscenes.",
   },
   {
     step: "Higher education:",
@@ -115,31 +115,31 @@ const educationData = [
     place: "EPIC institute of technology",
     years: "2023-2024",
     description:
-      "Studying at the EPIC Institute of Technology provides a unique and valuable opportunity for students to develop their skills and receive a quality education in the field of technology. We have worked with experienced and qualified teachers who have extensive experience in their fields. Thus, I actively interacted with real projects and problems, which helped me develop my skills and better understand how to apply the knowledge I gained in practice.",
+      "At the EPIC Institute, I gained hands-on experience working on real-world projects under the guidance of experienced instructors. The coursework emphasized practical applications, helping me enhance my skills and deepen my understanding of how to apply technology solutions effectively.",
   },
 ];
 
 const projectData = [
   {
-    title: "Ozi: Social media",
+    title: "Educational Platform",
     description:
-      "This project was my first attempt at a full stack. Its development took about 4 months. You can also add friends, write messages, post your posts and leave your status in it.",
+      "An online platform designed for students to take tests and participate in contests with automated grading. Teachers are provided with tools for efficient and streamlined evaluation.",
+    image: "toolbox",
+    url: "https://epic-edu.institute",
+  },
+  {
+    title: "Ozi: Social Media",
+    description:
+      "This was my first full-stack project, developed over a span of 4 months. It allows users to add friends, send messages, post content, and update their status.",
     image: "social",
     url: "https://github.com/Qyea/Ozi",
   },
   {
     title: "Computer Vision",
     description:
-      " So that all the work is not wasted, here I will leave the tasks and their solutions for computer vision.",
+      "A collection of tasks and solutions related to computer vision, showcasing my work in the field.",
     image: "eye",
     url: "https://github.com/Qyea/Computer-vision",
-  },
-  {
-    title: "Ozi: Social media",
-    description:
-      " This project was my first attempt at a full stack. Its development took about 4 months. You can also add friends, write messages, post your posts and leave your status in it.",
-    image: "toolbox",
-    url: "https://github.com/Qyea/Travel-Landing-Page",
   },
 ];
 </script>
